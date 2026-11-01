@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<!-- Google Search Console:
+  <meta name="google-site-verification" content="PASTE_REAL_SEARCH_CONSOLE_TOKEN_HERE">
+--><meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<!-- Favicon -->
+<link href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%90%9F%3C/text%3E%3C/svg%3E" rel="icon"/>
+<!-- SEO -->
+<title>Soft Robotic Fish | Carangiform Design, RFEM Modeling &amp; Force Prediction</title>
+<meta content="Research on Carangiform-inspired cable-driven soft robotic fish design and RFEM-based dynamic modeling, with experimental lateral undulation and propulsive/lateral force validation." name="description"/>
+<meta content="soft robotic fish, Carangiform swimming, cable-driven robot, compliant tail, harmonic cable actuation, RFEM, rigid finite element method, dynamic modeling, lateral undulation, hydrodynamic forces, propulsive force, lateral force, experimental validation" name="keywords"/>
+<meta content="Rakhshan Hatami Varnousfaderani, Mohammadreza Estarki, Mohammad Zareinejad, Heidar Ali Talebi, Hamed Ghafarirad" name="author"/>
+<meta content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" name="robots"/>
+<meta content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" name="googlebot"/>
+<meta content="index, follow" name="bingbot"/>
+<meta content="strict-origin-when-cross-origin" name="referrer"/>
+<meta content="#061523" name="theme-color"/>
+<meta content="light" name="color-scheme"/>
+<link href="https://softroboticfish.github.io/" rel="canonical"/>
+<!-- Security policy for this static GitHub Pages build.
+       Inline CSS/JS are intentionally retained to preserve the single-file site. -->
+<meta content="default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self'; object-src 'none'; frame-src 'none'; base-uri 'self'; form-action 'none'; upgrade-insecure-requests" http-equiv="Content-Security-Policy"/>
+<!-- Open Graph -->
+<meta content="website" property="og:type"/>
+<meta content="en_US" property="og:locale"/>
+<meta content="Soft Robotic Fish Research Project" property="og:site_name"/>
+<meta content="https://softroboticfish.github.io/" property="og:url"/>
+<meta content="Soft Robotic Fish | Carangiform Design, RFEM Modeling &amp; Force Prediction" property="og:title"/>
+<meta content="Explore a 12-stage research workflow linking cable-driven Carangiform robotic fish design and experiments to RFEM-based dynamic modeling, lateral undulation, and force prediction." property="og:description"/>
+<meta content="https://softroboticfish.github.io/assets/images/soft-robotic-fish-12-stage-research-workflow.png" property="og:image"/>
+<meta content="2048" property="og:image:width"/>
+<meta content="1152" property="og:image:height"/>
+<meta content="image/png" property="og:image:type"/>
+<meta content="A twelve-stage infographic connecting Carangiform soft robotic fish design, experimental validation, RFEM dynamic modeling and force prediction." property="og:image:alt"/>
+<!-- Twitter / X Card -->
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="Soft Robotic Fish | Carangiform Design, RFEM Modeling &amp; Force Prediction" name="twitter:title"/>
+<meta content="Twelve stages connecting Carangiform soft robotic fish hardware and RFEM-based dynamic force prediction. Two peer-reviewed publications." name="twitter:description"/>
+<meta content="https://softroboticfish.github.io/assets/images/soft-robotic-fish-12-stage-research-workflow.png" name="twitter:image"/>
+<meta content="Twelve-stage research workflow: cable-driven Carangiform robot design and RFEM-based lateral undulation and force prediction." name="twitter:image:alt"/>
+<!-- Academic structured data: the project page contains two scholarly works -->
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": "https://softroboticfish.github.io/#webpage",
+  "url": "https://softroboticfish.github.io/",
+  "name": "Soft Robotic Fish | Carangiform Design, RFEM Modeling & Force Prediction",
+  "description": "Research on a cable-driven soft robotic fish inspired by Carangiform swimming and an RFEM-based dynamic model for lateral undulation and force prediction.",
+  "isPartOf": {
+    "@type": "WebSite",
+    "@id": "https://softroboticfish.github.io/#website",
+    "url": "https://softroboticfish.github.io/",
+    "name": "Soft Robotic Fish Research Project"
+  },
+  "hasPart": [
+    {
+      "@type": "ScholarlyArticle",
+      "@id": "https://doi.org/10.1007/s42235-025-00786-6",
+      "headline": "Lateral Undulation and Force Prediction in Soft Robotic Fish: A Systematic Approach",
+      "description": "A systematic dynamic model that combines the Rigid Finite Element Method with rigid-body robotics to predict soft robotic fish undulation and associated propulsive and lateral forces.",
+      "datePublished": "2025-11-04",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "DOI",
+        "value": "10.1007/s42235-025-00786-6"
+      },
+      "url": "https://doi.org/10.1007/s42235-025-00786-6",
+      "sameAs": "https://doi.org/10.1007/s42235-025-00786-6",
+      "keywords": [
+        "soft robotic fish",
+        "dynamic modeling",
+        "rigid finite element method",
+        "RFEM",
+        "lateral motion prediction",
+        "propulsive force",
+        "lateral force"
+      ],
+      "author": [
+        {
+          "@type": "Person",
+          "name": "Rakhshan Hatami Varnousfaderani",
+          "sameAs": "https://orcid.org/0009-0007-4453-9728"
+        },
+        {
+          "@type": "Person",
+          "name": "Mohammadreza Estarki",
+          "sameAs": "https://orcid.org/0009-0009-4095-9690"
+        },
+        {
+          "@type": "Person",
+          "name": "Mohammad Zareinejad"
+        },
+        {
+          "@type": "Person",
+          "name": "Heidar Ali Talebi",
+          "sameAs": "https://orcid.org/0000-0001-6038-2109"
+        },
+        {
+          "@type": "Person",
+          "name": "Hamed Ghafarirad",
+          "sameAs": "https://orcid.org/0000-0001-7292-143X"
+        }
+      ],
+      "isPartOf": {
+        "@type": "Periodical",
+        "name": "Journal of Bionic Engineering"
+      },
+      "volumeNumber": "22",
+      "pagination": "2950-2964",
+      "pageStart": "2950",
+      "pageEnd": "2964"
+    },
+    {
+      "@type": "ScholarlyArticle",
+      "@id": "https://doi.org/10.1109/ICRoM54204.2021.9663484",
+      "headline": "Design and Implementation of a Soft Robotic Fish Based on Carangiform Fish Swimming",
+      "description": "Design and experimental implementation of a Carangiform-inspired cable-driven soft robotic fish with a compliant tail and a rotating-disk traction mechanism.",
+      "datePublished": "2021",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "DOI",
+        "value": "10.1109/ICRoM54204.2021.9663484"
+      },
+      "url": "https://doi.org/10.1109/ICRoM54204.2021.9663484",
+      "sameAs": "https://doi.org/10.1109/ICRoM54204.2021.9663484",
+      "pagination": "322-328",
+      "keywords": [
+        "robotic fish",
+        "compliant body",
+        "cable-driven",
+        "undulatory motion",
+        "Carangiform swimming"
+      ],
+      "author": [
+        {
+          "@type": "Person",
+          "name": "Mohammadreza Estarki",
+          "sameAs": "https://orcid.org/0009-0009-4095-9690"
+        },
+        {
+          "@type": "Person",
+          "name": "Rakhshan Hatami Varnousfaderani",
+          "sameAs": "https://orcid.org/0009-0007-4453-9728"
+        },
+        {
+          "@type": "Person",
+          "name": "Hamed Ghafarirad",
+          "sameAs": "https://orcid.org/0000-0001-7292-143X"
+        },
+        {
+          "@type": "Person",
+          "name": "Mohammad Zareinejad"
+        }
+      ],
+      "isPartOf": {
+        "@type": "CreativeWork",
+        "name": "Proceedings of the 9th RSI International Conference on Robotics and Mechatronics (ICRoM 2021)"
+      }
+    }
+  ],
+  "primaryImageOfPage": {
+    "@type": "ImageObject",
+    "@id": "https://softroboticfish.github.io/#research-workflow-image",
+    "name": "Soft Robotic Fish: 12-Stage Research Workflow",
+    "contentUrl": "https://softroboticfish.github.io/assets/images/soft-robotic-fish-12-stage-research-workflow.png",
+    "url": "https://softroboticfish.github.io/assets/images/soft-robotic-fish-12-stage-research-workflow.png",
+    "width": 2048,
+    "height": 1152,
+    "description": "A twelve-stage research overview connecting Carangiform-inspired cable-driven soft robotic fish design, compliant-tail experiments, RFEM discretization, force projection, dynamic equations, lateral-undulation prediction, and force validation.",
+    "creditText": "Research synthesis of the two publications linked on this webpage; see each paper for the original figures and results."
+  },
+  "dateModified": "2026-11-01"
+}</script>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&amp;family=Inter:ital,wght@0,400;0,500;0,600;1,400&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet"/>
+
+<link href="assets/css/site.css" rel="stylesheet"/></head>
+<body>
+<!-- Skip link (accessibility) -->
+<a class="skip-link" href="#overview">Skip to main content</a>
+<!-- ========================================================
+     NAVIGATION  (keyboard shortcuts: press 1–7 to jump)
+======================================================== -->
+<nav aria-label="Main navigation" class="site-nav">
+<div class="container">
+<a class="nav-logo" href="#hero">SoftRoboticFish<span>.github.io</span></a>
+<button aria-controls="navLinks" aria-expanded="false" aria-label="Toggle navigation menu" class="nav-toggle" id="navToggle">
+<span></span><span></span><span></span>
+</button>
+<ul class="nav-links" id="navLinks">
+<li><a class="active" data-shortcut="1" href="#overview" title="Shortcut: 1">Overview</a></li>
+<li><a data-shortcut="2" href="#abstracts" title="Shortcut: 2">Abstracts</a></li>
+<li><a data-shortcut="3" href="#hardware" title="Shortcut: 3">Robotic Fish</a></li>
+<li><a data-shortcut="4" href="#modeling" title="Shortcut: 4">RFEM Modeling</a></li>
+<li><a data-shortcut="5" href="#results" title="Shortcut: 5">Results &amp; Questions</a></li>
+<li><a data-shortcut="6" href="#publications" title="Shortcut: 6">Papers &amp; BibTeX</a></li>
+<li><a data-shortcut="7" href="#authors" title="Shortcut: 7">Research Team</a></li>
+</ul>
+</div>
+<div aria-hidden="true" class="scroll-progress"><span id="scrollProgressBar"></span></div>
+</nav>
+<!-- ========================================================
+     HERO
+======================================================== -->
+<header class="hero" id="hero">
+<canvas aria-hidden="true" id="waveCanvas"></canvas>
+<div class="container">
+<div class="hero-content">
+<div class="hero-eyebrow">Soft Robotics · Bionic Engineering · Underwater Locomotion · Dynamic Modeling</div>
+<h1 class="hero-title">
+        Soft Robotic Fish:<br/>
+<span class="hl">Bio-Inspired Design, Lateral Undulation, and Force Prediction</span></h1>
+<p class="hero-sub">A cable-driven soft robotic fish inspired by Carangiform swimming, and a systematic approach to simulate its dynamic lateral undulation and the resulting propulsive and lateral forces.</p>
+<div class="hero-btns">
+<a class="btn btn-primary" href="https://doi.org/10.1007/s42235-025-00786-6" rel="noopener noreferrer" target="_blank">
+          📄 Journal Paper
+        </a>
+<a class="btn btn-hero" href="https://doi.org/10.1109/ICRoM54204.2021.9663484" rel="noopener noreferrer" target="_blank">
+          📄 Conference Paper
+        </a>
+<a class="btn btn-hero" href="#publications">📋 BibTeX</a>
+</div>
+</div>
+</div>
+</header>
+<!-- ========================================================
+     OVERVIEW
+======================================================= -->
+<section class="section" id="overview">
+<div class="container">
+<div class="eyebrow">Overview</div>
+<div class="media-feature research-visual reveal"><figure class="workflow-figure" itemscope="" itemtype="https://schema.org/ImageObject"><a aria-controls="workflowDialog" aria-haspopup="dialog" aria-label="Expand the 12-stage soft robotic fish research workflow image to fullscreen" class="workflow-open" href="assets/images/soft-robotic-fish-12-stage-research-workflow.png" id="openWorkflow" title="Open the full-resolution workflow image"><picture><source srcset="assets/images/soft-robotic-fish-12-stage-research-workflow.webp" type="image/webp"/><img alt="Twelve-stage soft robotic fish research workflow, from Carangiform-inspired design and cable-driven prototype experiments to RFEM dynamic modeling, lateral undulation prediction and force validation." decoding="async" fetchpriority="high" height="1152" loading="eager" src="assets/images/soft-robotic-fish-12-stage-research-workflow.png" width="2048"/></picture><span aria-hidden="true" class="workflow-expand-badge">⤢  Expand image</span></a><figcaption class="workflow-caption"><strong>Research workflow · 12 stages / 2 studies</strong> — From Carangiform-inspired soft robotic fish design and experimental implementation (ICRoM 2021) to RFEM-based lateral-undulation and force prediction (Journal of Bionic Engineering 2025).</figcaption></figure><div class="workflow-description"><p>The overview connects two studies through twelve stages. Stages 1–6 cover traveling-wave kinematics, Carangiform body geometry, compliant-tail design, harmonic cable actuation, prototype assembly, and experimental lateral-motion validation. Stages 7–12 summarize RFEM discretization, cable-force projection, governing dynamics, the experimental platform, lateral-undulation prediction, and propulsive and lateral force assessment.</p></div><p class="workflow-rights-note">Illustrated research summary. Panel references point to the original publications; see the linked papers for the source figures and complete methods.</p></div>
+<div class="prose reveal">
+<p>The robotic fish tail combines a cable-driven body with a compliant soft tail. A traction system exerts a sinusoidal pattern of push and traction of the wires, producing the lateral undulation of Carangiform swimming.</p>
+<p>The dynamic model integrates the rigid finite element method with rigid-body robotics. The soft body is represented by finite rigid elements connected through torsional springs and dampers, while external effects are incorporated as equivalent joint torques.</p>
+</div>
+<div class="timeline" data-stagger="">
+<div class="phase reveal">
+<div class="phase-dot">01</div>
+<div class="phase-label">ICRoM 2021</div>
+<h3>Design &amp; Build</h3>
+<p>Bio-inspired body, cable-driven section, compliant tail, sinusoidal traction system, prototype fabrication.</p>
+<div class="phase-tag"><span class="badge badge-conference">Conference Paper</span></div>
+</div>
+<div class="phase reveal">
+<div class="phase-dot">02</div>
+<div class="phase-label">J. Bionic Eng. 2025</div>
+<h3>Dynamic Modeling</h3>
+<p>RFEM discretization, spring-damper elements, DH kinematics, equivalent joint torque projection, hydrodynamic model.</p>
+<div class="phase-tag"><span class="badge badge-journal">Journal Paper</span></div>
+</div>
+<div class="phase reveal">
+<div class="phase-dot">03</div>
+<div class="phase-label">J. Bionic Eng. 2025</div>
+<h3>Experimental Validation</h3>
+<p>Image-based midline extraction, ATI Nano17 force sensing, motor current identification,multi-frequency testing.</p>
+<div class="phase-tag"><span class="badge badge-journal">Journal Paper</span></div>
+</div>
+<div class="phase reveal">
+<div class="phase-dot">04</div>
+<div class="phase-label">Future Work</div>
+<h3>Toward Autonomy</h3>
+<p>Pectoral fins,three-dimensional swimming, motion planning and control, and section-length optimization.</p>
+<div class="phase-tag"><span class="badge badge-future">Future</span></div>
+</div>
+</div>
+</div>
+</section>
+<!-- ========================================================
+     Abstracts
+======================================================== -->
+<section class="section section-alt" id="abstracts">
+<div class="container">
+<div class="eyebrow">Abstracts</div>
+<h2 class="section-title">Research Abstracts</h2>
+<div class="abstracts-list"><article class="abstract-entry journal reveal"><p class="abstract-paper">Journal Paper · Journal of Bionic Engineering · 2025</p><h3><a class="title-link" href="https://doi.org/10.1007/s42235-025-00786-6" rel="noopener noreferrer" target="_blank">Lateral Undulation and Force Prediction in Soft Robotic Fish: A Systematic Approach</a></h3><p class="abstract-text">Soft robots, as a modern gateway to unlocking the mysteries of underwater realms, present new complexities. Modeling their behavior when in contact with external forces, whether point-based or distributed, is a primary challenge due to the nature of soft bodies. To obtain a holistic view of the system’s behavior determining the governing dynamics is deemed necessary. This paper proposes a new technique to simulate the dynamic lateral undulation of a soft robotic fish with a cable-driven soft tail. By integrating the rigid finite element method with rigid-body robotics, the model represents the undulation of a finite number of rigid elements connected through a set of torsional spring and damper. Instead of directly modeling external forces, we substitute equivalent joint torques into the system dynamics, allowing us to consider external effects without complicating the model. The resulting model yields valuable insights into the system’s behavior, including propulsive and lateral forces. A comparison with experimental results shows strong agreement, with a tip amplitude error of 10% at 0.8 Hz, 5.25% at 1.6 Hz and 2.54% at 2.2 Hz flapping frequency. These findings illuminate the influence of lateral undulation on the overall dynamics, paving the way for fully autonomous robotic fish.</p></article><article class="abstract-entry conference reveal"><p class="abstract-paper">Conference Paper · 9th RSI International Conference on Robotics and Mechatronics (ICRoM) · 2021</p><h3><a class="title-link" href="https://doi.org/10.1109/ICRoM54204.2021.9663484" rel="noopener noreferrer" target="_blank">Design and Implementation of a Soft Robotic Fish Based on Carangiform Fish Swimming</a></h3><p class="abstract-text">In the past decade, numerous underwater robots have been proposed. Nevertheless, the complexity of their designs diminishes their applicability in real-life scavenging missions. This paper proposes an optimized design of a fish-wise robot, mimicking the undulatory motion of a Carangiform fish alongside delicate performance in suboptimal tail-beat frequencies. This source of inspiration allows the robot to have high efficiency besides weight considerations. A novel traction system is embedded in the newly designed power transmission unit to exert a sinusoidal pattern of push and traction of the wires. The structure is made up of a cable-driven body connected to a compliant structure via CT sheet to eliminate joint friction and also enhance the robustness of the robot. The prototype body geometry was carefully examined through kinematic modeling. Later on, a prototype has been built and underwent experiments to verify the final results. The robot was able to accomplish an acceptable and trustable lateral motion at lower and higher designed frequencies. At the 2-hertz frequency of tail-beat, the ideal frequency, the lateral motion had a maximum error of 7%. The results were satisfactory, accomplishing the desires.</p></article></div></div>
+</section>
+<!-- ========================================================
+     CARANGIFORM-INSPIRED ROBOTIC FISH
+======================================================= -->
+<section class="section" id="hardware">
+<div class="container">
+<div class="eyebrow">Conference Paper · ICRoM 2021</div>
+<h2 class="section-title">Carangiform-Inspired Cable-Driven Soft Robotic Fish</h2>
+<div class="prose reveal">
+<p>The robotic fish was developed around a hybrid body architecture that combines an actively driven cable-based section with a compliant tail. The prescribed Carangiform midline motion is imposed through the cable-driven portion, while the compliant section continues the deformation toward the caudal fin. A rotating-disk transmission converts continuous DC-motor rotation into alternating cable traction, producing the periodic lateral excitation required for body undulation without repeated reversal of the motor.</p>
+<p>The prototype was evaluated experimentally in a water tank using image-based tracking of the body midline. The measured motion showed close agreement with the intended lateral pattern at the 2 Hz design frequency, where the maximum reported lateral-motion error was approximately 7%. Additional tests at lower and higher frequencies showed that the operating frequency directly influences the amplitude and fidelity of the resulting undulation, motivating the frequency-dependent design considerations examined in the paper.</p>
+<a aria-label="Read the ICRoM 2021 conference paper" class="rq-link" href="https://doi.org/10.1109/ICRoM54204.2021.9663484" rel="noopener noreferrer" target="_blank">Read the conference paper ↗</a>
+</div>
+</div>
+</section>
+<!-- ========================================================
+     RFEM-BASED DYNAMIC MODELING
+======================================================== -->
+<section class="section section-alt" id="modeling">
+<div class="container">
+<div class="eyebrow">Journal Paper · J. Bionic Engineering 2025</div>
+<h2 class="section-title">RFEM-Based Dynamic Modeling of Soft Robotic Fish Undulation</h2>
+<div class="prose reveal">
+<p>The dynamic model combines the Rigid Finite Element Method (RFEM) with rigid-body robotics to represent the compliant fish as a finite-dimensional multibody system. The soft sections are discretized into rigid elements coupled through torsional spring-damper elements, while their kinematics are formulated using standard serial-chain robotics. Motor-induced cable forces and hydrodynamic loads are mapped into the generalized coordinates through Jacobian-based equivalent joint torques, allowing actuation, structural compliance, and fluid loading to be incorporated within a unified dynamic formulation.</p>
+<p>The resulting model is used to reconstruct the lateral body deformation and to estimate the propulsive and lateral forces associated with the undulatory motion. Experimental validation was performed at multiple flapping frequencies using image-based midline measurements and a six-axis force-torque sensor. The comparisons show that the model captures the principal deformation and force-generation behavior while also revealing phase differences associated with the simplified hydrodynamic representation, which are analyzed in detail in the paper.</p>
+<a aria-label="Read the Journal of Bionic Engineering paper" class="rq-link" href="https://doi.org/10.1007/s42235-025-00786-6" rel="noopener noreferrer" target="_blank">Read the journal paper ↗</a>
+</div>
+</div>
+</section>
+<!-- ========================================================
+     RESULTS
+======================================================= -->
+<section class="section" id="results">
+<div class="container">
+<div class="eyebrow">Results</div>
+<h2 class="section-title">Key Quantitative Results</h2>
+<div class="stats-grid" data-stagger="">
+<div class="stat-card reveal">
+<div class="stat-val">~7%</div>
+<div class="stat-lbl">Maximum lateral-motion error at 2 Hz</div>
+</div>
+<div class="stat-card reveal">
+<div class="stat-val">2.54%</div>
+<div class="stat-lbl">Caudal-fin tip amplitude error at 2.2 Hz</div>
+</div>
+<div class="stat-card reveal">
+<div class="stat-val">10</div>
+<div class="stat-lbl">Rigid elements in the RFEM representation</div>
+</div>
+<div class="stat-card reveal">
+<div class="stat-val">3.5–10.1%</div>
+<div class="stat-lbl">Lateral-undulation error range at 1.6 Hz</div>
+</div>
+</div>
+<div aria-labelledby="research-questions-title" class="research-questions">
+<div class="eyebrow">Research Questions</div>
+<h2 class="section-title" id="research-questions-title">Questions Addressed by the Research</h2>
+<article class="research-question journal reveal">
+<p class="rq-paper">Journal of Bionic Engineering · 2025</p>
+<h3>Can an RFEM-based dynamic model predict both lateral undulation and propulsive and lateral forces in a soft robotic fish?</h3>
+<p class="rq-answer">The model represents the compliant fish as rigid finite elements connected through torsional spring-damper elements, with motor-induced and hydrodynamic effects introduced as Jacobian-projected equivalent joint torques. Across the tested flapping frequencies, the formulation reproduces the principal lateral-undulation behavior and provides estimates of the resulting propulsive and lateral forces. The reported caudal-fin tip amplitude errors were 10% at 0.8 Hz, 5.25% at 1.6 Hz, and 2.54% at 2.2 Hz, while force predictions were experimentally assessed at 0.8 and 1.6 Hz.</p>
+<p class="rq-support"><strong>Supporting results</strong> · Secs. 5.1–5.3 · Figs. 12–14 · Tables 6–7</p>
+<a aria-label="Read the Journal of Bionic Engineering paper" class="rq-link" href="https://doi.org/10.1007/s42235-025-00786-6" rel="noopener noreferrer" target="_blank">Read the journal paper ↗</a>
+</article>
+<article class="research-question conference reveal">
+<p class="rq-paper">9th RSI International Conference on Robotics and Mechatronics (ICRoM) · 2021</p>
+<h3>How can a cable-driven soft robotic fish reproduce Carangiform lateral undulation using a compliant tail?</h3>
+<p class="rq-answer">The platform couples an actively cable-driven section to a compliant tail so that controlled motion in the driven section is transmitted into lateral deformation toward the caudal fin. A rotating-disk mechanism converts continuous DC-motor rotation into alternating cable traction, providing the periodic excitation required for undulation. Image-based tracking in water-tank experiments showed close agreement with the intended Carangiform midline motion at the 2 Hz design frequency, with a maximum reported lateral-motion error of approximately 7%.</p>
+<p class="rq-support"><strong>Supporting results</strong> · Sec. IV-A · Figs. 8–10 · Table II</p>
+<a aria-label="Read the ICRoM 2021 conference paper" class="rq-link" href="https://doi.org/10.1109/ICRoM54204.2021.9663484" rel="noopener noreferrer" target="_blank">Read the conference paper ↗</a>
+</article>
+</div>
+</div>
+</section>
+<!-- ========================================================
+     PUBLICATIONS
+======================================================== -->
+<section class="section section-alt" id="publications">
+<div class="container">
+<div class="eyebrow">Publications</div>
+<h2 class="section-title">Publications and BibTeX</h2>
+<div class="papers-grid" data-stagger="">
+<div class="paper-card journal reveal" id="journal-paper">
+<div class="paper-type-tag">Journal Paper - Modeling and Force Foundation</div>
+<h3><a class="title-link" href="https://doi.org/10.1007/s42235-025-00786-6" rel="noopener noreferrer" target="_blank">Lateral Undulation and Force Prediction in Soft Robotic Fish: A Systematic Approach</a></h3>
+<p class="paper-venue">Journal of Bionic Engineering, 2025 · DOI: <a class="doi-link" href="https://doi.org/10.1007/s42235-025-00786-6" rel="noopener noreferrer" target="_blank">10.1007/s42235-025-00786-6</a></p>
+<p class="paper-authors">Rakhshan Hatami Varnousfaderani, Mohammadreza Estarki, Mohammad Zareinejad, Heidar Ali Talebi, Hamed Ghafarirad</p>
+<div class="paper-btns">
+<a class="btn btn-journal" href="https://doi.org/10.1007/s42235-025-00786-6" rel="noopener noreferrer" target="_blank">DOI Link</a>
+<button class="btn btn-ghost" data-copy-bibtex="journal">Copy BibTeX</button>
+</div>
+</div>
+<div class="paper-card conference reveal" id="conference-paper">
+<div class="paper-type-tag">Conference Paper - Design Foundation</div>
+<h3><a class="title-link" href="https://doi.org/10.1109/ICRoM54204.2021.9663484" rel="noopener noreferrer" target="_blank">Design and Implementation of a Soft Robotic Fish Based on Carangiform Fish Swimming</a></h3>
+<p class="paper-venue">9th RSI ICRoM 2021 · IEEE · DOI: <a class="doi-link" href="https://doi.org/10.1109/ICRoM54204.2021.9663484" rel="noopener noreferrer" target="_blank">10.1109/ICRoM54204.2021.9663484</a></p>
+<p class="paper-authors">Mohammadreza Estarki, Rakhshan Hatami Varnousfaderani, Hamed Ghafarirad, Mohammad Zareinejad</p>
+<div class="paper-btns">
+<a class="btn btn-conference" href="https://doi.org/10.1109/ICRoM54204.2021.9663484" rel="noopener noreferrer" target="_blank">DOI Link</a>
+<button class="btn btn-ghost" data-copy-bibtex="conference">Copy BibTeX</button>
+</div>
+</div>
+</div>
+<!-- BibTeX -->
+<h3 class="bib-heading">BibTeX — Journal Paper</h3>
+<div class="bib-block" id="bib-journal">
+<button class="copy-btn" data-copy-bibtex="journal">Copy</button>
+<pre>@article{Varnousfaderani2025LateralUndulation,
+  author  = {Varnousfaderani, Rakhshan Hatami and Estarki, Mohammadreza
+             and Zareinejad, Mohammad and Talebi, Heidar Ali
+             and Ghafarirad, Hamed},
+  title   = {Lateral Undulation and Force Prediction in Soft Robotic Fish:
+             A Systematic Approach},
+  journal = {Journal of Bionic Engineering},
+  volume  = {22},
+  number  = {6},
+  pages   = {2950--2964},
+  year    = {2025},
+  doi     = {10.1007/s42235-025-00786-6},
+  url     = {https://doi.org/10.1007/s42235-025-00786-6}
+}</pre>
+</div>
+<h3 class="bib-heading">BibTeX — Conference Paper</h3>
+<div class="bib-block" id="bib-conference">
+<button class="copy-btn" data-copy-bibtex="conference">Copy</button>
+<pre>@inproceedings{Estarki2021DesignImplementation,
+  author    = {Estarki, Mohammadreza and Varnousfaderani, Rakhshan Hatami
+               and Ghafarirad, Hamed and Zareinejad, Mohammad},
+  title     = {Design and Implementation of a Soft Robotic Fish
+               Based on Carangiform Fish Swimming},
+  booktitle = {2021 9th RSI International Conference on Robotics and Mechatronics (ICRoM)},
+  pages     = {322--328},
+  year      = {2021},
+  doi       = {10.1109/ICRoM54204.2021.9663484},
+  url       = {https://doi.org/10.1109/ICRoM54204.2021.9663484}
+}</pre>
+</div>
+</div>
+</section>
+<!-- ========================================================
+     AUTHORS
+======================================================= -->
+<section class="section compact" id="authors">
+<div class="container">
+<div class="eyebrow">Authors and affiliations</div>
+<h2 class="section-title">Research Team</h2>
+<svg aria-hidden="true" class="orcid-sprite" focusable="false">
+<symbol id="orcid-icon" viewbox="0 0 20 20">
+<circle cx="10" cy="10" fill="#A6CE39" r="10"></circle>
+<circle cx="6.15" cy="5.9" fill="#fff" r="1.05"></circle>
+<rect fill="#fff" height="6.7" width="1.7" x="5.3" y="8.1"></rect>
+<path d="M9.2,8.1 H11.6 C14.0,8.1 15.6,9.7 15.6,11.45 C15.6,13.2 14.0,14.8 11.6,14.8 H9.2 Z M10.75,9.6 H11.3 C12.7,9.6 13.5,10.4 13.5,11.45 C13.5,12.5 12.7,13.3 11.3,13.3 H10.75 Z" fill="#fff" fill-rule="evenodd"></path>
+</symbol>
+</svg><p class="authors-row"><span class="author-chip">Rakhshan Hatami Varnousfaderani<a aria-label="Rakhshan Hatami Varnousfaderani — ORCID 0009-0007-4453-9728" class="orcid-link" href="https://orcid.org/0009-0007-4453-9728" rel="noopener noreferrer" target="_blank" title="ORCID 0009-0007-4453-9728"><svg aria-hidden="true" focusable="false"><use href="#orcid-icon"></use></svg></a></span><span class="author-sep">·</span><span class="author-chip">Mohammadreza Estarki<a aria-label="Mohammadreza Estarki — ORCID 0009-0009-4095-9690" class="orcid-link" href="https://orcid.org/0009-0009-4095-9690" rel="noopener noreferrer" target="_blank" title="ORCID 0009-0009-4095-9690"><svg aria-hidden="true" focusable="false"><use href="#orcid-icon"></use></svg></a></span><span class="author-sep">·</span><span class="author-chip">Mohammad Zareinejad</span><span class="author-sep">·</span><span class="author-chip">Heidar Ali Talebi<a aria-label="Heidar Ali Talebi — ORCID 0000-0001-6038-2109" class="orcid-link" href="https://orcid.org/0000-0001-6038-2109" rel="noopener noreferrer" target="_blank" title="ORCID 0000-0001-6038-2109"><svg aria-hidden="true" focusable="false"><use href="#orcid-icon"></use></svg></a></span><span class="author-sep">·</span><span class="author-chip">Hamed Ghafarirad<a aria-label="Hamed Ghafarirad — ORCID 0000-0001-7292-143X" class="orcid-link" href="https://orcid.org/0000-0001-7292-143X" rel="noopener noreferrer" target="_blank" title="ORCID 0000-0001-7292-143X"><svg aria-hidden="true" focusable="false"><use href="#orcid-icon"></use></svg></a></span></p>
+<p class="footnote">
+      Amirkabir University of Technology, Tehran, Iran · Department of Mechanical Engineering · New Technologies Research Center · Department of Electrical Engineering
+    </p>
+</div>
+</section>
+<!-- ========================================================
+     FOOTER
+======================================================== -->
+<footer class="site-footer">
+<div class="container">
+<div class="footer-grid">
+<div class="footer-brand">
+<div class="footer-logo">SoftRoboticFish<span>.github.io</span></div>
+<p>A soft robotic fish research project connecting Carangiform-inspired cable-driven body design and compliant-tail experiments with RFEM-based dynamic modeling, lateral-undulation prediction, and experimental assessment of propulsive and lateral forces.</p>
+</div>
+<div class="footer-col">
+<h4>Sections</h4>
+<ul>
+<li><a href="#overview">Overview</a></li>
+<li><a href="#abstracts">Abstracts</a></li>
+<li><a href="#hardware">Robotic Fish</a></li>
+<li><a href="#modeling">RFEM Modeling</a></li>
+<li><a href="#results">Results &amp; Questions</a></li>
+<li><a href="#publications">Papers &amp; BibTeX</a></li>
+<li><a href="#authors">Research Team</a></li>
+</ul>
+</div>
+<div class="footer-col">
+<h4>Papers</h4>
+<ul>
+<li><a href="https://doi.org/10.1007/s42235-025-00786-6" rel="noopener noreferrer" target="_blank">Journal Paper (2025)</a></li>
+<li><a href="https://doi.org/10.1109/ICRoM54204.2021.9663484" rel="noopener noreferrer" target="_blank">Conference Paper (2021)</a></li>
+</ul>
+<h4 class="footer-keywords-heading">Keywords</h4>
+<ul>
+<li><a href="https://scholar.google.com/scholar?q=%22soft+robotic+fish%22" rel="noopener noreferrer" target="_blank">Soft Robotic Fish</a></li>
+<li><a href="https://scholar.google.com/scholar?q=%22rigid+finite+element+method%22+%22dynamic+modeling%22" rel="noopener noreferrer" target="_blank">RFEM Dynamic Modeling</a></li>
+<li><a href="https://scholar.google.com/scholar?q=%22carangiform+swimming%22" rel="noopener noreferrer" target="_blank">Carangiform Swimming</a></li>
+<li><a href="https://scholar.google.com/scholar?q=%22lateral+undulation%22+robot" rel="noopener noreferrer" target="_blank">Lateral Undulation</a></li>
+<li><a href="https://scholar.google.com/scholar?q=%22force+prediction%22+soft+robot" rel="noopener noreferrer" target="_blank">Force Prediction</a></li>
+</ul>
+</div>
+</div>
+<div class="footer-bottom">
+<span>© 2026 Soft Robotic Fish Research Project · All rights reserved · <a class="footer-license-link" href="LICENSE.md">Rights &amp; reuse</a></span>
+<span>Built with GitHub Pages</span>
+</div>
+</div>
+</footer>
+<!-- Floating actions -->
+<button aria-label="Back to top" class="back-to-top" id="backToTop">
+<svg aria-hidden="true" viewbox="0 0 24 24"><path d="M12 4l-7 7h4v9h6v-9h4z"></path></svg>
+</button>
+<div aria-live="polite" class="toast" id="toast" role="status"></div>
+<!-- ========================================================
+     JAVASCRIPT
+======================================================== -->
+<dialog aria-label="Full-size twelve-stage research workflow" class="workflow-dialog" id="workflowDialog"><div class="workflow-dialog-content"><button aria-label="Close enlarged image" class="workflow-dialog-close" id="closeWorkflow" type="button">×</button><picture><source srcset="assets/images/soft-robotic-fish-12-stage-research-workflow.webp" type="image/webp"/><img alt="Enlarged 12-stage workflow showing conference design and validation (steps 1–6) and journal RFEM modeling and force prediction (steps 7–12)." decoding="async" height="1152" src="assets/images/soft-robotic-fish-12-stage-research-workflow.png" width="2048"/></picture><p class="workflow-dialog-caption">Soft robotic fish · 12-stage research workflow · Press Esc or × to close</p></div></dialog>
+<!-- JavaScript loads after the dialog to initialize its controls. -->
+<script src="assets/js/site.js" defer></script>
+</body></html>

@@ -1,0 +1,54 @@
+# Soft Robotic Fish Research Project – public GitHub Pages site
+# Crawlers may index this public research landing page and its images.
+# robots.txt controls crawling, not ownership, copyright or AI training permissions.
+
+User-agent: *
+Allow: /
+
+# Google Search / Scholar
+User-agent: Googlebot
+Allow: /
+
+# Bing and Microsoft-powered search
+User-agent: bingbot
+Allow: /
+
+# ChatGPT Search
+User-agent: OAI-SearchBot
+Allow: /
+
+# OpenAI crawling and user-initiated requests
+User-agent: GPTBot
+Allow: /
+User-agent: ChatGPT-User
+Allow: /
+
+# Claude
+User-agent: Claude-SearchBot
+Allow: /
+User-agent: Claude-User
+Allow: /
+User-agent: ClaudeBot
+Allow: /
+
+# Perplexity
+User-agent: PerplexityBot
+Allow: /
+
+# Google and Apple supplementary user agents / permissions tokens
+User-agent: Google-Extended
+Allow: /
+User-agent: GoogleOther
+Allow: /
+User-agent: Applebot
+Allow: /
+User-agent: Applebot-Extended
+Allow: /
+
+# Academic discovery and open-web data
+User-agent: SemanticScholarBot
+Allow: /
+User-agent: CCBot
+Allow: /
+
+Sitemap: https://softroboticfish.github.io/sitemap.xml
